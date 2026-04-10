@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: YOUR_DOCKER_USERNAME/maruthi-k8s:latest
+        image: <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/maruthi-k8s:latest
         ports:
         - containerPort: 3000
