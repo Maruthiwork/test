@@ -1,8 +1,9 @@
-FROM nginx:latest
+FROM node:18
 
-# Copy all files to NGINX html folder
-COPY . /usr/share/nginx/html
+WORKDIR /app
 
-EXPOSE 80
+COPY app.js .
 
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 3000
+
+CMD ["node", "app.js"]
