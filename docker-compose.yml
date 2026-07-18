@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   web:
-    build: .
+    image : test
     container_name: my-nginx
     ports:
       - "80:80"
